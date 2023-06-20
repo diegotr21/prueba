@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    color: darkblue;
+    /* border: 3px solid yellow; */
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color:blueviolet
+    font-family: 'arial', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    /* border: 1px solid black; */
+}
+
+p {
+    color: blue
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+    /* border: 1px solid black; */
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    margin: 10px;
+    /* border: 1px solid black; */
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+.flex-container{
+    border: 1px black;
+    background-color: bisque;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+      align-items: center;
+      width: 200px;
+      margin: 0 auto;
